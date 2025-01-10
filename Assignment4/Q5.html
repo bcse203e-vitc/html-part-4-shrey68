@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order Form</title>
+</head>
+<body>
+    <h1>Product Order Form</h1>
+    <form action="/login" method="post">
+        
+        <label for="name">Customer Name:</label><br>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="3" cols="30" required></textarea>
+        <br><br>
+
+        <label for="product">Product:</label><br>
+        <select id="product" name="product" required>
+            <option value="Laptop">Laptop ($800)</option>
+            <option value="Smartphone">Smartphone ($500)</option>
+            <option value="Headphones">Headphones ($100)</option>
+            <option value="Smartwatch">Smartwatch ($200)</option>
+        </select>
+        <br><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+        <br><br>
+
+        <label>Delivery Preferences:</label>
+        <input type="radio" id="standard" name="delivery" value="Standard" checked>
+        <label for="standard">Standard</label>
+        <input type="radio" id="express" name="delivery" value="Express">
+        <label for="express">Express</label>
+        <br><br>
+
+        <hr>
+        <label for="coupon">Apply Coupon:</label><br>
+        <input type="text" id="coupon" name="coupon" placeholder="Enter coupon code">
+        <br><br>
+
+        <button type="submit">Place Order</button>
+    </form>
+</body>
+</html>

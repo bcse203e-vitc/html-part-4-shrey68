@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Survey Form</title>
+</head>
+<body>
+    <h1>Health Survey Form</h1>
+    <form action="/login" method="post">
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" max="120" required>
+        <br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <label for="height">Height (cm):</label><br>
+        <input type="number" id="height" name="height" min="50" max="250" required>
+        <br><br>
+
+        <label for="weight">Weight (kg):</label><br>
+        <input type="number" id="weight" name="weight" min="10" max="300" required>
+        <br><br>
+
+        <label>Lifestyle Questions:</label>
+        <br>
+        <input type="checkbox" id="smoke" name="lifestyle" value="Smoking">
+        <label for="smoke">Do you smoke?</label>
+        <br>
+        <input type="checkbox" id="exercise" name="lifestyle" value="Exercise">
+        <label for="exercise">Do you exercise regularly?</label>
+        <br>
+        <input type="checkbox" id="balanced-diet" name="lifestyle" value="Balanced Diet">
+        <label for="balanced-diet">Do you maintain a balanced diet?</label>
+        <br><br>
+
+        <label for="diet">Dietary Preference:</label><br>
+        <select id="diet" name="diet" required>
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Non-Vegetarian">Non-Vegetarian</option>
+            <option value="Vegan">Vegan</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+
+        <label for="activity">Activity Level:</label><br>
+        <select id="activity" name="activity" required>
+            <option value="Sedentary">Sedentary</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Active">Active</option>
+        </select>
+        <br><br>
+
+        <label for="concerns">Optional Health Concerns:</label><br>
+        <textarea id="concerns" name="concerns" rows="4" cols="30" ></textarea>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
