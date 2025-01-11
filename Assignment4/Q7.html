@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Form</title>
+</head>
+<body>
+    <h1>Travel Booking Form</h1>
+    <form action="submit-booking.php" method="post">
+        
+        <label for="full-name">Full Name:</label><br>
+        <input type="text" id="full-name" name="full_name" required>
+        <br><br>
+
+        <label for="contact-info">Contact Information:</label><br>
+        <input type="email" id="contact-info" name="contact_info" placeholder="Email Address" required>
+        <br><br>
+
+        <label for="destination">Destination:</label><br>
+        <select id="destination" name="destination" required>
+            <option value="Paris">Tokyo</option>
+            <option value="Tokyo">Bangkok</option>
+            <option value="New York">Los Angeles</option>
+            <option value="Dubai">Dubai</option>
+            <option value="Sydney">Seoul</option>
+        </select>
+        <br><br>
+
+        <label for="travel-dates">Travel Dates:</label><br>
+        <input type="date" id="travel-dates" name="travel_dates" required>
+        <br><br>
+
+        <label for="travelers">Number of Travelers:</label><br>
+        <input type="number" id="travelers" name="travelers" min="1" required>
+        <br><br>
+
+        <label>Travel Class:</label><br>
+        <input type="radio" id="economy" name="travel_class" value="Economy" required>
+        <label for="economy">Economy</label>
+        <input type="radio" id="business" name="travel_class" value="Business">
+        <label for="business">Business</label>
+        <input type="radio" id="first-class" name="travel_class" value="First Class">
+        <label for="first-class">First Class</label>
+        <br><br>
+
+        
+        <input type="checkbox" id="insurance" name="insurance">
+        <label for="insurance">Opt for Travel Insurance</label>
+        <p>Insurance adds an additional $50 per traveler.</p>
+        <br><br>
+        <hr>
+
+        <p>
+            <strong>Note:</strong> The total cost is calculated as: <br>
+            <code>Total Cost = Base Price × Number of Travelers</code> <br>
+            Base Price for Economy: $500, Business: $1000, First Class: $1500. <br>
+        </p>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+</body>
+</html>
