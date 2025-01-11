@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Form Template</title>
+</head>
+<body>
+    <h1>Form Customization Template</h1>
+
+    <form>
+        <label for="form-name">Form Name:</label><br>
+        <input type="text" id="form-name" name="form-name" required>
+        <br><br>
+
+        <label for="num-fields">Number of Input Fields:</label><br>
+        <input type="number" id="num-fields" name="num-fields" min="1" required>
+        <br><br>
+
+        <label>Field Details:</label><br>
+        <p><strong>Field 1:</strong></p>
+        <label for="field-type-1">Type:</label>
+        <select id="field-type-1" name="field-type-1" required>
+            <option value="text">Text</option>
+            <option value="email">Email</option>
+            <option value="number">Number</option>
+            <option value="date">Date</option>
+        </select>
+        <br>
+        <label for="field-label-1">Label:</label>
+        <input type="text" id="field-label-1" name="field-label-1" required>
+        <br><br>
+
+        <p><strong>Field 2:</strong></p>
+        <label for="field-type-2">Type:</label>
+        <select id="field-type-2" name="field-type-2">
+            <option value="text">Text</option>
+            <option value="email">Email</option>
+            <option value="number">Number</option>
+            <option value="date">Date</option>
+        </select>
+        <br>
+        <label for="field-label-2">Label:</label>
+        <input type="text" id="field-label-2" name="field-label-2">
+        <br><br>
+
+        <p><strong>Field 3:</strong></p>
+        <label for="field-type-3">Type:</label>
+        <select id="field-type-3" name="field-type-3">
+            <option value="text">Text</option>
+            <option value="email">Email</option>
+            <option value="number">Number</option>
+            <option value="date">Date</option>
+        </select>
+        <br>
+        <label for="field-label-3">Label:</label>
+        <input type="text" id="field-label-3" name="field-label-3">
+        <br><br>
+
+        <button type="submit">Generate Form</button>
+    </form>
+
+   
+</body>
+</html>
